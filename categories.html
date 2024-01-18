@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Category Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="nav-logo">
+            <a href="#"><img src="images/amazon_logo.png" alt="logo"></a>
+          </div>
+          <div class="address">
+            <a href="#" class="deliver">Deliver</a>
+            <div class="map-icon">
+              <span class="material-symbols-outlined">location_on</span>
+              <a href="#" class="location">Nyeri Kenya</a>
+            </div>
+          </div>
+  
+        </nav>
+        
+        <div class="banner">
+          <div class="banner-content">
+            <div class="panel">
+              <a href="index.html"><span class="material-symbols-outlined">Back</span></a>
+            </div>
+
+            <div class="cart">
+              <a href="#cart-section">
+                </a>
+                <p>Cart</p>
+            </div>
+          </div>
+        </div>
+    </header>
+    <h1>Select a Category:</h1>
+    <select id="category-selector">
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">Jewelery</option>
+        <option value="jewelery">men's clothing</option>
+        <option value="jewelery">women's clothing</option>
+    </select>
+    <button onclick="getProducts()">Get Products</button>
+    <div id="product-list">
+
+    </div>
+    <div id="product-details">
+
+    </div>
+    <script src="categories.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
